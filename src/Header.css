@@ -1,7 +1,8 @@
 .header{
+    margin-top: 10px;
     height: 108px;
     padding: 0px;
-    box-shadow: 0px 0px 20px gray;
+    box-shadow: 0px 7px 12px rgba(194, 194, 194, 0.507);
     
 }
 .header .container{
@@ -31,15 +32,35 @@
 
 .header .nav2 li{
     display: inline-block;
-    line-height: 64.8px;
     font-size: 18px;
     text-align: center;
     width: 130px;
+    height: 64.8px;
     list-style: none;
     cursor: pointer;
+    color: rgb(80, 80, 80);
     
 }
-.header .nav2 li.currentPage{
-    background-color: rgb(42, 84, 124);
-    color: white;
+.header .nav2 li .text{
+    margin: auto;
+    padding:0px 0 0 0;
+    line-height: 50px;
+    width: 100px;
 }
+
+.header .nav2 li.currentPage .text, .header .nav2 li .text:hover{
+    color: rgb(5, 187, 250);
+
+    border-bottom: 2px solid;
+}
+
+/*
+    하늘색
+    color: rgb(5, 187, 250);
+    파란색
+    color: rgb(18, 138, 250);
+
+    글자 파란색
+    color: rgb(3, 54, 202);
+
+*/

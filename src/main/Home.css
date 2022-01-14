@@ -1,0 +1,10 @@
+.home {
+    margin-top: 20px;
+}
+.home .slide-show{
+    width: 800px;
+}
+
+.home .slide-show img{
+    width: 100%;
+}

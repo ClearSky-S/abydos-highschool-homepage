@@ -1,6 +1,10 @@
+import Home from './main/Home';
+import './Main.css';
 function Main(){
     return(
-        <div className="main">main</div>
+        <div className="main">
+            <div className="container"><Home/></div>
+        </div>
     )
 }
 export default Main;
