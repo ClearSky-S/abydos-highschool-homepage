@@ -21,7 +21,7 @@ function Header({page, setPage}){
 
                 </ul></div>
             </div>
-
+            <div className="shadow"></div>
         </div>
     );
 }
