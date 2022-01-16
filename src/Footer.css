@@ -1,0 +1,80 @@
+.footer{
+    margin-top:30px;
+    background-color:rgb(210, 248, 255);
+    padding: 20px;
+    
+}
+
+.footer .container {
+    box-sizing: border-box;
+    width: 1120px;
+    margin: 0 auto;
+    padding-left: 0px;
+}
+.footer .container .infos{
+    color:rgb(58, 58, 58);
+    width: 710px;
+}
+.footer .container p, .footer .container address {
+    margin-bottom: 8px;
+    line-height: 1.5em;
+}
+.footer .container p.copy{
+    font-weight: 600;
+    color: rgb(100, 100, 100);
+}
+
+
+.footer .family_site{
+    position: relative;
+    float: right;
+    margin-left: 30px;
+}
+
+.footer .family_site .family_site_open_button{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    line-height: 50px;
+    border-radius: 10px;
+    border: 1px solid;
+    height: 50px;
+    width: 250px;
+    padding-left: 30px;
+}
+.footer .family_site .family_site_open_button .arrow{
+    float: right;
+    line-height: 50px;
+    padding-right: 20px;
+
+}
+
+.footer .family_site .family_site_open{
+    display: none;
+    position: absolute;
+    bottom: 52px;
+    border-radius: 10px;
+
+    border: 1px solid;
+
+    background-color: white;
+}
+.footer .family_site .family_site_open.active{
+    display: block;
+
+}
+
+.footer .family_site .family_site_open li{
+
+    list-style: none;
+    height: 50px;
+    width: 280px;
+
+}
+.footer .family_site .family_site_open li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding-left: 30px;
+    line-height: 50px;
+
+}

@@ -101,9 +101,9 @@ function Section2() {
         <div className="section2">section2</div>
     )
 }
-function Section3() {
+function UserInfo() {
     return (
-        <div className="section3">section3</div>
+        <div className="user-info">section3</div>
     )
 }
 
@@ -114,7 +114,8 @@ function Home() {
             <div className="grid">
                 <SlideShow /> <QuickLink />
 
-                <Section1 /> <Section2 /> <Section3 />
+                <Section1 /> <Section2 /> <UserInfo />
+                <Section2 /> <Section2 /> <Section2 />
 
             </div>
         </div>

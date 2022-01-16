@@ -5,3 +5,18 @@
 body{
   min-width: 1200px;
 }
+
+body::-webkit-scrollbar {
+  width: 15px; /*스크롤바의 너비*/
+  height: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(21, 94, 153, 0.7); /*스크롤바의 색상*/
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba(117, 167, 180, 0.514); /*스크롤바 트랙 색상*/
+}

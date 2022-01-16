@@ -6,7 +6,7 @@
 .home .grid{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 517.38px 230px;
+    grid-template-rows: 517.38px 230px 230px;
     gap: 30px;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .home .quick-link, .home .slide-show,
-.home .section1, .home .section2, .home .section3{
+.home .section1, .home .section2, .home .user-info{
     overflow: hidden;
     border-radius: 15px;
     border-bottom: 2px solid rgb(221, 221, 221);
