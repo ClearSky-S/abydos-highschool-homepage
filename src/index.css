@@ -4,6 +4,7 @@
 }
 body{
   min-width: 1200px;
+  font-family: sans-serif;
 }
 
 body::-webkit-scrollbar {
