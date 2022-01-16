@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
 .home {
     margin-top: 30px;
 }
@@ -9,14 +11,9 @@
 }
 
 .home .slide-show{
-    background-color: rgb(255, 255, 255);
     overflow: hidden;
     grid-column: 1 / 3;
 	grid-row: 1 / 2;
-    border-radius: 15px;
-    border-bottom: 2px solid rgb(221, 221, 221);
-    border-right: 2px solid rgb(221, 221, 221);
-
 }
 
 .home .slide-show img{
@@ -26,14 +23,50 @@
 }
 
 .home .quick-link{
-    background-color: aquamarine;
     grid-column: 3 / 4;
 	grid-row: 1 / 2;
-    border-radius: 15px;
-    border-bottom: 2px solid rgb(221, 221, 221);
-    border-right: 2px solid rgb(221, 221, 221);
 
 }
+
+.home .quick-link .title{
+    color: rgb(117, 117, 117);
+    color: rgb(117, 136, 180);
+
+    margin: 10px 20px 15px;
+    font-size:25px;
+    font-family: 'Jua', sans-serif;
+}
+.home .quick-link .grid{
+    display:grid;
+    row-gap: 10px;
+    column-gap: 0px;
+    height: 80%;
+    grid-template-columns: 117px 117px 117px;
+    grid-template-rows: 137px 137px 137px;
+    
+}
+.home .quick-link .grid .item .image{
+    margin: 10px auto 12px auto;
+    width:90px;
+    height:90px;
+    border-radius: 45px;
+    overflow: hidden;
+}
+.home .quick-link .grid .item .image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.home .quick-link .grid .item .text{
+    margin: auto;
+    text-align: center;
+    color: rgb(117, 136, 180);
+    font-size:17px;
+    font-family: 'Jua', sans-serif;
+}
+
+.home .quick-link, .home .slide-show,
 .home .section1, .home .section2, .home .section3{
     overflow: hidden;
     border-radius: 15px;
