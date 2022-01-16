@@ -5,13 +5,15 @@ import './App.css';
 import {useState} from 'react';
 
 function App() {
-  const [page, setPage] = useState("home");
-  console.log(page);
+  const [page1, setPage1] = useState("home");
+  const [page2, setPage2] = useState(0);
+
+  console.log(page1);
   return (
     <div className="App">
     
-      <Header page={page} setPage={setPage}/>
-      <Main page={page}/>
+      <Header page1={page1} setPage1={setPage1} page2={page2} setPage2={setPage2} />
+      <Main page1={page1} page2={page2} setPage2={setPage2}/>
       <Footer/>
     </div>
   );

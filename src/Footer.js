@@ -6,10 +6,10 @@ function Footer() {
         <div className="footer">
             <div className="container">
                 <div 
-                    class="family_site"
+                    className="family_site"
                     onMouseLeave={() => setFamilySiteActive(false)}
                 >
-                    <ul class={"family_site_open" + (familySiteActive ? " active" : "")}>
+                    <ul className={"family_site_open" + (familySiteActive ? " active" : "")}>
                         <li>
                             <a href="https://bluearchive.nexon.com/home">블루아카이브</a>
                         </li>
