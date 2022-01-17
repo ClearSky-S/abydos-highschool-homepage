@@ -4,11 +4,15 @@ function SideNav({ page1, page2, setPage2, pages }) {
     return (
         <div className="side-nav">
             <div className="title">
-                -{pages[page1].koreanName}-
+                {pages[page1].koreanName}
             </div>
             <ul>
                 {pages[page1].subpages.map((element, index) =>
-                    <li key={index}>{element} {element === pages[page1][page2] ? "curr" : null}</li>
+                    <li
+                        key={index}
+                        className={element === pages[page1].subpages[page2] ? "active" : ""}
+                        onClick={() => setPage2(index)}
+                    ><div>{element}</div></li>
                 )}
             </ul>
         </div>
@@ -29,7 +33,7 @@ function Content({ page1, page2, setPage2, pages }) {
                         {pages[page1].subpages[page2]}
                     </div>
 
-                    {page1} {page2} Body
+                    {page1} {page2}
 
                 </div>
             </div>

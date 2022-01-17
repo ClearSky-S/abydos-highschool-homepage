@@ -4,7 +4,6 @@
     padding: 20px;
     
 }
-
 .footer .container {
     box-sizing: border-box;
     width: 1120px;
@@ -36,7 +35,7 @@
     cursor: pointer;
     line-height: 50px;
     border-radius: 10px;
-    border: 1px solid;
+    border: 1px solid rgb(5, 187, 250);
     height: 50px;
     width: 250px;
     padding-left: 30px;
@@ -45,7 +44,7 @@
     float: right;
     line-height: 50px;
     padding-right: 20px;
-
+    color: rgb(5, 187, 250);
 }
 
 .footer .family_site .family_site_open{
@@ -54,7 +53,7 @@
     bottom: 52px;
     border-radius: 10px;
 
-    border: 1px solid;
+    border: 1px solid rgb(5, 187, 250);
 
     background-color: white;
 }

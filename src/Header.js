@@ -11,7 +11,9 @@ function Header({ page1, setPage1, setPage2, pages }) {
                 <h1 className="item" onClick={() => {
                     setPage1("home");
                 }}><img src="img/logo3.png" alt="abydos logo"></img></h1>
-                <div className="nav1 item">nav1<ul></ul></div>
+
+                <div className="nav1 item"><ul></ul></div>
+
                 <div className="nav2 item"><ul>
                     <li className={page1 === "intro" ? "currentPage" : null} onClick={() => changePage("intro", 0)}><div className="text">{pages.intro.koreanName}</div><ul></ul></li>
                     <li className={page1 === "enroll" ? "currentPage" : null} onClick={() => changePage("enroll", 0)}><div className="text">{pages.enroll.koreanName}</div><ul></ul></li>
