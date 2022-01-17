@@ -13,12 +13,12 @@ function Header({ page1, setPage1, setPage2, pages }) {
                 }}><img src="img/logo3.png" alt="abydos logo"></img></h1>
                 <div className="nav1 item">nav1<ul></ul></div>
                 <div className="nav2 item"><ul>
-                    <li className={page1 === "intro" ? "currentPage" : null} onClick={() => changePage("intro", 0)}><div className="text">학교소개</div><ul></ul></li>
-                    <li className={page1 === "enroll" ? "currentPage" : null} onClick={() => changePage("enroll", 0)}><div className="text">입학안내</div><ul></ul></li>
-                    <li className={page1 === "notice" ? "currentPage" : null} onClick={() => changePage("notice", 0)}><div className="text">학사안내</div><ul></ul></li>
-                    <li className={page1 === "community" ? "currentPage" : null} onClick={() => changePage("community", 0)}><div className="text">커뮤니티</div><ul></ul></li>
-                    <li className={page1 === "gallery" ? "currentPage" : null} onClick={() => changePage("gallery", 0)}><div className="text">갤러리</div><ul></ul></li>
-                    <li className={page1 === "fund" ? "currentPage" : null} onClick={() => changePage("fund", 0)}><div className="text">발전기금</div><ul></ul></li>
+                    <li className={page1 === "intro" ? "currentPage" : null} onClick={() => changePage("intro", 0)}><div className="text">{pages.intro.koreanName}</div><ul></ul></li>
+                    <li className={page1 === "enroll" ? "currentPage" : null} onClick={() => changePage("enroll", 0)}><div className="text">{pages.enroll.koreanName}</div><ul></ul></li>
+                    <li className={page1 === "notice" ? "currentPage" : null} onClick={() => changePage("notice", 0)}><div className="text">{pages.notice.koreanName}</div><ul></ul></li>
+                    <li className={page1 === "community" ? "currentPage" : null} onClick={() => changePage("community", 0)}><div className="text">{pages.community.koreanName}</div><ul></ul></li>
+                    <li className={page1 === "gallery" ? "currentPage" : null} onClick={() => changePage("gallery", 0)}><div className="text">{pages.gallery.koreanName}</div><ul></ul></li>
+                    <li className={page1 === "fund" ? "currentPage" : null} onClick={() => changePage("fund", 0)}><div className="text">{pages.fund.koreanName}</div><ul></ul></li>
 
                 </ul></div>
             </div>
