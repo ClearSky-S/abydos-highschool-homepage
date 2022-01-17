@@ -5,7 +5,9 @@ import './App.css';
 import {useState} from 'react';
 const pages = {
   intro:[
-    
+    1,
+    2,
+    3
   ],
   enroll:[
 22
