@@ -67,10 +67,20 @@
 }
 
 .home .quick-link, .home .slide-show,
-.home .section1, .home .section2, .home .user-info{
+.home .section1, .home .section2, .home .user-info, .home .working{
     overflow: hidden;
     border-radius: 15px;
     border-bottom: 2px solid rgb(221, 221, 221);
     border-right: 2px solid rgb(221, 221, 221);
 
+}
+
+.home .working{
+    text-align: center;
+}
+.home .working img{
+    display: block;
+    margin-left: 60px;
+    width: 60%;
+    margin-bottom: 15px;
 }

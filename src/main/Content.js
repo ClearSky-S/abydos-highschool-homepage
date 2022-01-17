@@ -1,11 +1,11 @@
 import './Content.css';
-
+import Error404 from './Error404';
 function SideNav({ page1, page2, setPage2, pages }) {
     return (
         <div className="side-nav">
-            <div className="title">
+            <h5 className="title">
                 {pages[page1].koreanName}
-            </div>
+            </h5>
             <ul>
                 {pages[page1].subpages.map((element, index) =>
                     <li
@@ -27,13 +27,15 @@ function Content({ page1, page2, setPage2, pages }) {
                 <img src="img/banner.png" alt="banner" />
             </div>
             <div className="grid">
-                <SideNav page1={page1} page2={page2} setPage2={setPage2} pages={pages} />
+                <div className="item1">
+                    <SideNav page1={page1} page2={page2} setPage2={setPage2} pages={pages} />
+                </div>
                 <div className="item2">
-                    <div className="title">
+                    <h3 className="title">
                         {pages[page1].subpages[page2]}
-                    </div>
+                    </h3>
 
-                    {page1} {page2}
+                    <Error404/>
 
                 </div>
             </div>

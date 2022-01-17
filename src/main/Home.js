@@ -106,7 +106,14 @@ function UserInfo() {
         <div className="user-info">section3</div>
     )
 }
-
+function WorkingComponent() {
+    return (
+        <div className="working">
+            <img src="img/working.png" alt="working component"/>
+            <p>제작 중인 컴포넌트입니다</p>
+        </div>
+    )
+}
 
 function Home() {
     return (
@@ -114,8 +121,8 @@ function Home() {
             <div className="grid">
                 <SlideShow /> <QuickLink />
 
-                <Section1 /> <Section2 /> <UserInfo />
-                <Section2 /> <Section2 /> <Section2 />
+                <WorkingComponent /> <WorkingComponent /> <WorkingComponent />
+                <WorkingComponent /> <WorkingComponent /> <WorkingComponent />
 
             </div>
         </div>

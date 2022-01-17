@@ -12,10 +12,6 @@
     border-right: 2px solid rgb(221, 221, 221);
 }
 
-
-.content * {
-    /* border: 1px solid rgb(53, 53, 53); */
-}
 .content .grid{
     display:grid;
     column-gap: 10px;
@@ -26,10 +22,10 @@
 .content .side-nav{
     box-sizing: border-box;
     width:300px;
+
     /* height: 600px; */
 
 }
-
 .content .side-nav, .content .item2{
     overflow: hidden;
     border-radius: 15px;
@@ -46,6 +42,7 @@
     color: rgb(78, 123, 190);
 }
 .content .side-nav ul li{
+    cursor: pointer;
     box-sizing: border-box;
     height: 45px;
     border-top: 0.5px solid rgb(212, 212, 212);
@@ -71,4 +68,19 @@
     /* color: rgb(5, 187, 250); */
     /* border-bottom: 1px solid rgb(5, 187, 250); */
 
+}
+
+
+.content .item2{
+    padding:20px;
+}
+
+.content .item2 .title{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(168, 168, 168);
+    margin-bottom:20px;
+
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(78, 123, 190);
 }

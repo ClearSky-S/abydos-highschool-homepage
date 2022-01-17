@@ -18,4 +18,4 @@ reportWebVitals();
 
 
 // ToDo
-// Title, sideNav, nav3, 404page, working component, TOP, 퀵링크
+// nav3, TOP, 퀵링크
