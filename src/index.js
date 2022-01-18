@@ -18,4 +18,4 @@ reportWebVitals();
 
 
 // ToDo
-// nav3, TOP, 퀵링크
+// TOP, 퀵링크

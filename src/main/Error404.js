@@ -8,7 +8,7 @@ function Error404(){
                 현재 작업 중인 페이지입니다.
                 자세한 문의는 아래 링크로 부탁드립니다.
             </p>
-            <a href="#">카카오톡 오픈 채팅방</a>
+            <a href="https://open.kakao.com/o/gy0Tm3Ud">카카오톡 오픈 채팅방</a>
         </div>
     )
 }

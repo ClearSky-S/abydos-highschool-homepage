@@ -68,6 +68,17 @@ const pages = {
   },
 };
 
+function Top(){
+  return(
+    <div
+      className="top-nav"
+      onClick={()=>window.scrollTo(0,0)}
+    >
+      <img src="img/top.png" alt="top"/>
+    </div>
+  )
+}
+
 function App() {
   const [page1, setPage1] = useState("home");
   const [page2, setPage2] = useState(0);
@@ -78,7 +89,7 @@ function App() {
 
       <Header page1={page1} page2={page2} setPage1={setPage1} setPage2={setPage2} pages={pages} />
       <Main page1={page1} page2={page2} setPage2={setPage2} pages={pages} />
-      <Footer />
+      <Footer /><Top/>
     </div>
   );
 }
