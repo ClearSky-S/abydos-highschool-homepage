@@ -18,7 +18,9 @@ function Header({ page1, setPage1, page2, setPage2, pages }) {
                 <div className="nav2 item">
                     <ul>
                         {Object.keys(pages).map((p1, i) =>
-                            <li className={page1 === p1 ? "currentPage" : null} onClick={(e) => {
+                            <li
+                                key={i}
+                                className={page1 === p1 ? "currentPage" : null} onClick={(e) => {
                                 if (e.target !== e.currentTarget) return;
                                 changePage(p1, 0);
                             }}>
@@ -34,7 +36,6 @@ function Header({ page1, setPage1, page2, setPage2, pages }) {
                                             key={index}
                                             onClick={() => changePage(p1, index)}
                                         >
-                                            {console.log(index)}
                                             <div className={(page1 === p1 && page2 === index) ? "active" : ""}>{subpage}</div>
                                         </li>)}
                                 </ul>

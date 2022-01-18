@@ -88,7 +88,7 @@ function App() {
     <div className="App">
 
       <Header page1={page1} page2={page2} setPage1={setPage1} setPage2={setPage2} pages={pages} />
-      <Main page1={page1} page2={page2} setPage2={setPage2} pages={pages} />
+      <Main page1={page1} page2={page2} setPage1={setPage1} setPage2={setPage2} pages={pages} />
       <Footer /><Top/>
     </div>
   );

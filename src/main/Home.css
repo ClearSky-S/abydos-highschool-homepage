@@ -45,6 +45,9 @@
     grid-template-rows: 137px 137px 137px;
     
 }
+.home .quick-link .grid .item{
+    cursor: pointer;
+}
 .home .quick-link .grid .item .image{
     margin: 10px auto 12px auto;
     width:90px;
