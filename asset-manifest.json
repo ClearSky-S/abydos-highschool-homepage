@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/abydos-highschool-homepage/static/css/main.7218d8c6.css",
-    "main.js": "/abydos-highschool-homepage/static/js/main.2ded7336.js",
+    "main.css": "/abydos-highschool-homepage/static/css/main.f383da42.css",
+    "main.js": "/abydos-highschool-homepage/static/js/main.b586557a.js",
     "static/js/787.3c0278fb.chunk.js": "/abydos-highschool-homepage/static/js/787.3c0278fb.chunk.js",
     "index.html": "/abydos-highschool-homepage/index.html",
-    "main.7218d8c6.css.map": "/abydos-highschool-homepage/static/css/main.7218d8c6.css.map",
-    "main.2ded7336.js.map": "/abydos-highschool-homepage/static/js/main.2ded7336.js.map",
+    "main.f383da42.css.map": "/abydos-highschool-homepage/static/css/main.f383da42.css.map",
+    "main.b586557a.js.map": "/abydos-highschool-homepage/static/js/main.b586557a.js.map",
     "787.3c0278fb.chunk.js.map": "/abydos-highschool-homepage/static/js/787.3c0278fb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7218d8c6.css",
-    "static/js/main.2ded7336.js"
+    "static/css/main.f383da42.css",
+    "static/js/main.b586557a.js"
   ]
 }
