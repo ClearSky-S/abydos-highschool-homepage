@@ -1,5 +1,5 @@
 {
-  "homepage": "https://clearsky-s.github.io/abydos-highschool-homepage",
+  "homepage": "https://clearsky-s.github.io/abydos-highschool-homepage/",
   "name": "abydos-highschool-homepage",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {

@@ -72,11 +72,11 @@ function App() {
   const [page1, setPage1] = useState("home");
   const [page2, setPage2] = useState(0);
 
-  console.log(page1);
+  console.log(page1, page2);
   return (
     <div className="App">
 
-      <Header page1={page1} setPage1={setPage1} setPage2={setPage2} pages={pages} />
+      <Header page1={page1} page2={page2} setPage1={setPage1} setPage2={setPage2} pages={pages} />
       <Main page1={page1} page2={page2} setPage2={setPage2} pages={pages} />
       <Footer />
     </div>

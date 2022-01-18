@@ -1,4 +1,6 @@
 .header{
+    z-index: 100;
+    box-sizing: border-box;
     position: relative;
     margin-top: 10px;
     height: 108px;
@@ -6,14 +8,17 @@
     
 }
 .header .shadow{
-    z-index: -1000;
+    z-index: -100;
     position: absolute;
     height: 108px;
     bottom: 0px;
     width: 100%;
     min-width: 1200px;
-    box-shadow: 0px 7px 12px rgba(194, 194, 194, 0.507);
+    box-shadow: 0px 20px 12px -12px rgba(194, 194, 194, 0.507);
 
+}
+.header .nav2:hover{
+    /* border-bottom: 1px solid rgb(5, 187, 250) */
 }
 .header .container{
     width: 1120px;
@@ -40,7 +45,8 @@
     white-space: nowrap;
 }
 
-.header .nav2 li{
+.header .nav2 > ul > li{
+    position: relative;
     display: inline-block;
     font-size: 18px;
     text-align: center;
@@ -51,14 +57,14 @@
     color: rgb(80, 80, 80);
     
 }
-.header .nav2 li .text{
+.header .nav2 > ul > li > .text{
     margin: auto;
     padding:0px 0 0 0;
     line-height: 50px;
     width: 100px;
 }
 
-.header .nav2 li.currentPage .text, .header .nav2 li .text:hover{
+.header .nav2 > ul > li.currentPage .text, .header .nav2 > ul > li:hover .text{
     color: rgb(5, 187, 250);
 
     border-bottom: 2px solid;
@@ -74,3 +80,54 @@
     color: rgb(3, 54, 202);
 
 */
+
+.header .nav2 .background{
+    display:none;
+    position: absolute;
+    top:108px;
+    height: 300px;
+    width: 820px;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(194, 194, 194, 0.507), inset  0px 20px 12px -12px rgba(219, 219, 219, 0.507);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+.header .nav2 ul:hover .background{
+    display: block;
+}
+
+.header .nav2 > ul > li > ul{
+    z-index: 1;
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    top:64.8px;
+    width: 130px;
+    margin-top: 10px;
+    /* border: 1px solid rgb(5, 187, 250); */
+}
+.header .nav2 > ul:hover > li > ul{
+    display: block;
+}
+
+.header .nav2 > ul > li > ul >li{
+    list-style: none;
+    height: 37px;
+    font-size:16px;
+    line-height: 30px;
+    /* border: 1px solid rgb(5, 187, 250); */
+    
+
+}
+.header .nav2 > ul > li > ul >li > div{
+    display: inline-block;
+    margin: auto auto;
+    color:rgb(61, 61, 61);
+
+}
+.header .nav2 > ul > li > ul >li > div.active, .header .nav2 > ul > li > ul >li:hover > div{
+    color:rgb(66, 107, 161);
+    border-bottom: 1px solid rgb(66, 107, 161);
+
+}
