@@ -74,7 +74,7 @@ function Top(){
       className="top-nav"
       onClick={()=>window.scrollTo(0,0)}
     >
-      <img src="img/top.png" alt="top"/>
+      <img src={`${process.env.PUBLIC_URL}/img/top.png`} alt="top"/>
     </div>
   )
 }

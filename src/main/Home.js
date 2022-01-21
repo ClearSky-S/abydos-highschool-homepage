@@ -58,21 +58,21 @@ function QuickLink({ page1, setPage1, page2, setPage2, pages }) {
                     className="item"
                     onClick={()=>changePage("intro",0)}
                 >
-                    <div className="image"><img src="img/quickLink/principal.png" alt="principal" /></div>
+                    <div className="image"><img src={`${process.env.PUBLIC_URL}/img/quickLink/principal.png`} alt="principal" /></div>
                     <div className="text">학교장 인사말</div>
                 </div>
                 <div
                     className="item"
                     onClick={()=>changePage("intro",1)}
                 >
-                    <div className="image"><img src="img/quickLink/objective.png" alt="objective" /></div>
+                    <div className="image"><img src={`${process.env.PUBLIC_URL}/img/quickLink/objective.png`} alt="objective" /></div>
                     <div className="text">교육목표</div>
                 </div>
                 <div
                     className="item"
                     onClick={()=>changePage("intro",3)}
                 >
-                    <div className="image"><img src="img/quickLink/symbol.png" alt="symbol" /></div>
+                    <div className="image"><img src={`${process.env.PUBLIC_URL}/img/quickLink/symbol.png`} alt="symbol" /></div>
                     <div className="text">상징</div>
                 </div>
 
@@ -80,21 +80,21 @@ function QuickLink({ page1, setPage1, page2, setPage2, pages }) {
                     className="item"
                     onClick={()=>changePage("enroll",0)}
                 >
-                    <div className="image"><img src="img/quickLink/enroll.png" alt="enroll" /></div>
+                    <div className="image"><img src={`${process.env.PUBLIC_URL}/img/quickLink/enroll.png`} alt="enroll" /></div>
                     <div className="text">입학안내</div>
                 </div>
                 <div
                     className="item"
                     onClick={()=>changePage("notice",0)}
                 >
-                    <div className="image"><img src="img/quickLink/calendar.png" alt="calendar" /></div>
+                    <div className="image"><img src={`${process.env.PUBLIC_URL}/img/quickLink/calendar.png`} alt="calendar" /></div>
                     <div className="text">학사일정</div>
                 </div>
                 <div
                     className="item"
                     onClick={()=>changePage("community",1)}
                 >
-                    <div className="image"><img src="img/quickLink/student.png" alt="student" /></div>
+                    <div className="image"><img src={`${process.env.PUBLIC_URL}/img/quickLink/student.png`} alt="student" /></div>
                     <div className="text">학생 게시판</div>
                 </div>
 
@@ -102,21 +102,21 @@ function QuickLink({ page1, setPage1, page2, setPage2, pages }) {
                     className="item"
                     onClick={()=>changePage("gallery",0)}
                 >
-                    <div className="image"><img src="img/quickLink/gallery.png" alt="gallery" /></div>
+                    <div className="image"><img src={`${process.env.PUBLIC_URL}/img/quickLink/gallery.png`} alt="gallery" /></div>
                     <div className="text">갤러리</div>
                 </div>
                 <div
                     className="item"
                     onClick={()=>changePage("intro",6)}
                 >
-                    <div className="image"><img src="img/quickLink/committee.png" alt="committee" /></div>
+                    <div className="image"><img src={`${process.env.PUBLIC_URL}/img/quickLink/committee.png`} alt="committee" /></div>
                     <div className="text">대책위원회</div>
                 </div>
                 <div
                     className="item"
                     onClick={()=>changePage("fund",0)}
                 >
-                    <div className="image"><img src="img/quickLink/money.png" alt="money" /></div>
+                    <div className="image"><img src={`${process.env.PUBLIC_URL}/img/quickLink/money.png`} alt="money" /></div>
                     <div className="text">발전기금</div>
                 </div>
             </div>
@@ -142,7 +142,7 @@ function UserInfo() {
 function WorkingComponent() {
     return (
         <div className="working">
-            <img src="img/working.png" alt="working component"/>
+            <img src={`${process.env.PUBLIC_URL}/img/working.png`} alt="working component"/>
             <p>제작 중인 컴포넌트입니다</p>
         </div>
     )

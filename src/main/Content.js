@@ -24,7 +24,7 @@ function Content({ page1, page2, setPage2, pages }) {
     return (
         <div className="content">
             <div className="banner">
-                <img src="img/banner.png" alt="banner" />
+                <img src={`${process.env.PUBLIC_URL}/img/banner.png`} alt="banner" />
             </div>
             <div className="grid">
                 <div className="item1">
