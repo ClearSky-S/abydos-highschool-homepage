@@ -34,11 +34,11 @@ function SlideShow() {
                 }}
                 speed={1000}
             >
-                <SwiperSlide><img src="img/homeSlide/BG_View_Abydos.jpg" alt="abydos school" /></SwiperSlide>
-                <SwiperSlide><img src="img/homeSlide/BG_ClassRoom.jpg" alt="classroom" /></SwiperSlide>
-                <SwiperSlide><img src="img/homeSlide/BG_CommitteeRoom.jpg" alt="CommitteeRoom" /></SwiperSlide>
-                <SwiperSlide><img src="img/homeSlide/BG_SchoolFrontGate.jpg" alt="BG_SchoolFrontGate" /></SwiperSlide>
-                <SwiperSlide><img src="img/homeSlide/BG_Title.jpg" alt="BG_Table" /></SwiperSlide>
+                <SwiperSlide><img src={`${process.env.PUBLIC_URL}/img/homeSlide/BG_View_Abydos.jpg`} alt="abydos school" /></SwiperSlide>
+                <SwiperSlide><img src={`${process.env.PUBLIC_URL}/img/homeSlide/BG_ClassRoom.jpg`} alt="classroom" /></SwiperSlide>
+                <SwiperSlide><img src={`${process.env.PUBLIC_URL}/img/homeSlide/BG_CommitteeRoom.jpg`} alt="CommitteeRoom" /></SwiperSlide>
+                <SwiperSlide><img src={`${process.env.PUBLIC_URL}/img/homeSlide/BG_SchoolFrontGate.jpg`} alt="BG_SchoolFrontGate" /></SwiperSlide>
+                <SwiperSlide><img src={`${process.env.PUBLIC_URL}/img/homeSlide/BG_Title.jpg`} alt="BG_Table" /></SwiperSlide>
             </Swiper>
         </div>
     )

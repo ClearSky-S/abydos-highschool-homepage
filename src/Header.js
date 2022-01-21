@@ -11,7 +11,7 @@ function Header({ page1, setPage1, page2, setPage2, pages }) {
             <div className="container">
                 <h1 className="item" onClick={() => {
                     changePage("home",0);
-                }}><img src="img/logo3.png" alt="abydos logo"></img></h1>
+                }}><img src={`${process.env.PUBLIC_URL}/img/logo3.png`} alt="abydos logo"></img></h1>
 
                 <div className="nav1 item"><ul></ul></div>
 
