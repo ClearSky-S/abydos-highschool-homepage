@@ -1,0 +1,48 @@
+.message-board table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.message-board thead tr{
+    border-top: 2px solid rgb(119, 164, 206);
+
+}
+.message-board thead tr th{
+    padding: 10px 5px;
+}
+
+.message-board tbody tr{
+    cursor:pointer;
+    border-top: 1px solid rgb(209, 209, 209);
+    border-bottom: 1px solid rgb(209, 209, 209);
+    font-size: 16px;
+}
+
+.message-board tbody tr td{
+    padding: 10px 5px;
+
+}
+.message-board tbody tr td:nth-child(1),
+.message-board tbody tr td:nth-child(3),
+.message-board tbody tr td:nth-child(4),
+.message-board tbody tr td:nth-child(5)
+{
+    text-align: center;
+}
+
+.message-board tbody tr td:nth-child(2){
+    padding-left: 30px;
+}
+
+.message-board .pagination{
+    margin: 10px auto;
+    text-align: center;
+}
+.message-board .pagination div{
+    display: inline-block;
+    cursor: pointer;
+}
+.message-board .pagination div:hover, .message-board .pagination div.active{
+    color: rgb(0, 153, 255);
+
+    /* text-decoration: underline; */
+}

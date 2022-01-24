@@ -1,5 +1,8 @@
 import './Content.css';
 import Error404 from './Error404';
+import MessageBoard from './ContentPage/MessageBoard';
+import {noticeBoardData} from './ContentPage/data/noticeBoardData'
+
 function SideNav({ page1, page2, setPage2, pages }) {
     return (
         <div className="side-nav">
@@ -11,7 +14,8 @@ function SideNav({ page1, page2, setPage2, pages }) {
                     <li
                         key={index}
                         className={element === pages[page1].subpages[page2] ? "active" : ""}
-                        onClick={() => {setPage2(index);window.scrollTo(0, 0);}}
+                        onClick={(e) => {setPage2(index);window.scrollTo(0, 0);
+                        }}
                     ><div>{element}</div></li>
                 )}
             </ul>
@@ -21,6 +25,7 @@ function SideNav({ page1, page2, setPage2, pages }) {
 
 
 function Content({ page1, page2, setPage2, pages }) {
+    console.log("1")
     return (
         <div className="content">
             <div className="banner">
@@ -34,8 +39,9 @@ function Content({ page1, page2, setPage2, pages }) {
                     <h3 className="title">
                         {pages[page1].subpages[page2]}
                     </h3>
-
-                    <Error404/>
+                    {console.log(page1)}
+                    {console.log("1")}
+                    {page1==="notice"&&page2===1?<MessageBoard rawData={noticeBoardData}/>:<Error404/>}
 
                 </div>
             </div>

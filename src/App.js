@@ -82,8 +82,6 @@ function Top(){
 function App() {
   const [page1, setPage1] = useState("home");
   const [page2, setPage2] = useState(0);
-
-  console.log(page1, page2);
   return (
     <div className="App">
 
