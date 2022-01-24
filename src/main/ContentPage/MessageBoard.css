@@ -46,3 +46,7 @@
 
     /* text-decoration: underline; */
 }
+
+.message-board .post{
+    white-space: pre-wrap;
+}

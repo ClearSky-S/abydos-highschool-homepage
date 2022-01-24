@@ -22,10 +22,10 @@ function Row({ rowData, setIndex, isNotice }) {
 function Post({ element, index, setIndex }) {
     return (
         <div className="post">
+            <div>{element.content}</div>
             <button
                 onClick={() => { setIndex(-1) }}
             >목록</button>
-            {element.content}
         </div>
     );
 }
