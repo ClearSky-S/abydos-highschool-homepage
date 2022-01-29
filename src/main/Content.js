@@ -1,7 +1,8 @@
 import './Content.css';
 import Error404 from './Error404';
 import MessageBoard from './ContentPage/MessageBoard';
-import {noticeBoardData} from './ContentPage/data/noticeBoardData'
+import {noticeBoardData} from './ContentPage/data/noticeBoardData';
+import {newsletterData} from './ContentPage/data/newsletterData';
 
 function SideNav({ page1, page2, setPage2, pages }) {
     return (
@@ -25,7 +26,6 @@ function SideNav({ page1, page2, setPage2, pages }) {
 
 
 function Content({ page1, page2, setPage2, pages }) {
-    console.log("1")
     return (
         <div className="content">
             <div className="banner">
@@ -39,9 +39,16 @@ function Content({ page1, page2, setPage2, pages }) {
                     <h3 className="title">
                         {pages[page1].subpages[page2]}
                     </h3>
-                    {console.log(page1)}
-                    {console.log("1")}
-                    {page1==="notice"&&page2===1?<MessageBoard rawData={noticeBoardData}/>:<Error404/>}
+                    {page1==="notice"&&page2===0?<MessageBoard rawData={noticeBoardData}/>:null}
+                    {page1==="notice"&&page2===1?<MessageBoard rawData={newsletterData}/>:null}
+                    {page1==="notice"&&page2===2?<MessageBoard rawData={noticeBoardData}/>:null}
+                    {page1==="notice"&&page2===3?<Error404/>:null}
+                    {page1==="notice"&&page2===4?<MessageBoard rawData={noticeBoardData}/>:null}
+
+
+
+                    {page1!=="notice"?<Error404/>:null}
+
 
                 </div>
             </div>

@@ -2,7 +2,7 @@
     border-collapse: collapse;
     width: 100%;
 }
-.message-board thead tr{
+.message-board thead tr, .message-board .post tr:first-child{
     border-top: 2px solid rgb(119, 164, 206);
 
 }
@@ -16,7 +16,9 @@
     border-bottom: 1px solid rgb(209, 209, 209);
     font-size: 16px;
 }
-
+.message-board .post tbody tr{
+    cursor: default;
+}
 .message-board tbody tr td{
     padding: 10px 5px;
 
@@ -31,6 +33,14 @@
 
 .message-board tbody tr td:nth-child(2){
     padding-left: 30px;
+}
+
+.message-board tbody tr td .notice{
+    background-color: rgb(66, 107, 161);
+    padding:5px 0px;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
 .message-board .pagination{
@@ -49,4 +59,19 @@
 
 .message-board .post{
     white-space: pre-wrap;
+}
+.message-board .post .bottom{
+    width: 100%;
+}
+.message-board .post .bottom button{
+    float: right;
+    width:90px;
+    height: 40px;
+    border: 0px;
+    background-color: rgb(66, 107, 161);
+    color: white;
+    margin: 20px 20px 0px 0;
+    cursor: pointer;
+    font-size:15px;
+    border-radius: 10px;
 }

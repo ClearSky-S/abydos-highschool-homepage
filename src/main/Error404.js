@@ -5,10 +5,10 @@ function Error404(){
         <div className="error-404">
             <img src={`${process.env.PUBLIC_URL}/img/404.png`} alt="404"/>
             <p>
-                현재 작업 중인 페이지입니다.
-                자세한 문의는 아래 링크로 부탁드립니다.
+                모래폭풍으로 인한 데이터 서버 손상으로 현재 일부 페이지를 접근할 수 없습니다.<br/>
+                빠른 시일 내로 복구될 수 있도록 노력하겠습니다.
             </p>
-            <a href="https://open.kakao.com/o/gy0Tm3Ud">카카오톡 오픈 채팅방</a>
+            {/* <a href="https://open.kakao.com/o/gy0Tm3Ud">카카오톡 오픈 채팅방</a> */}
         </div>
     )
 }
