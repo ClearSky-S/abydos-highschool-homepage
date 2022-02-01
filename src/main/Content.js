@@ -3,6 +3,7 @@ import Error404 from './Error404';
 import MessageBoard from './ContentPage/MessageBoard';
 import {noticeBoardData} from './ContentPage/data/noticeBoardData';
 import {newsletterData} from './ContentPage/data/newsletterData';
+import {awardData} from './ContentPage/data/awardData';
 
 function SideNav({ page1, page2, setPage2, pages }) {
     return (
@@ -41,9 +42,9 @@ function Content({ page1, page2, setPage2, pages }) {
                     </h3>
                     {page1==="notice"&&page2===0?<MessageBoard rawData={noticeBoardData}/>:null}
                     {page1==="notice"&&page2===1?<MessageBoard rawData={newsletterData}/>:null}
-                    {page1==="notice"&&page2===2?<MessageBoard rawData={noticeBoardData}/>:null}
+                    {page1==="notice"&&page2===2?<MessageBoard rawData={awardData}/>:null}
                     {page1==="notice"&&page2===3?<Error404/>:null}
-                    {page1==="notice"&&page2===4?<MessageBoard rawData={noticeBoardData}/>:null}
+                    {page1==="notice"&&page2===4?<MessageBoard rawData={awardData}/>:null}
 
 
 
