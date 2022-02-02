@@ -1,6 +1,7 @@
 import './Content.css';
 import Error404 from './Error404';
 import MessageBoard from './ContentPage/MessageBoard';
+import Gallery from './ContentPage/Gallery';
 import {noticeBoardData} from './ContentPage/data/noticeBoardData';
 import {newsletterData} from './ContentPage/data/newsletterData';
 import {awardData} from './ContentPage/data/awardData';
@@ -40,17 +41,22 @@ function Content({ page1, page2, setPage2, pages }) {
                     <h3 className="title">
                         {pages[page1].subpages[page2]}
                     </h3>
+
+                    {page1==="intro"?<Error404/>:null}
+
+                    {page1==="enroll"?<Error404/>:null}
+
                     {page1==="notice"&&page2===0?<MessageBoard rawData={noticeBoardData}/>:null}
                     {page1==="notice"&&page2===1?<MessageBoard rawData={newsletterData}/>:null}
                     {page1==="notice"&&page2===2?<MessageBoard rawData={awardData}/>:null}
-                    {page1==="notice"&&page2===3?<Error404/>:null}
-                    {page1==="notice"&&page2===4?<MessageBoard rawData={awardData}/>:null}
+                    {page1==="notice"&&page2===3?<Error404 />:null}
+                    {page1==="notice"&&page2===4?<Error404 />:null}
 
+                    {page1==="community"?<Error404/>:null}
 
+                    {page1==="gallery"?<Gallery/>:null}
 
-                    {page1!=="notice"?<Error404/>:null}
-
-
+                    {page1==="fund"?<Error404/>:null}
                 </div>
             </div>
         </div>
