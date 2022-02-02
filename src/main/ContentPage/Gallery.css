@@ -42,7 +42,7 @@
 .gallery .mySwiper .swiper-slide {
     width: 25%;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .gallery .mySwiper .swiper-slide-thumb-active {

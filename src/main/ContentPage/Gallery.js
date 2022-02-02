@@ -57,7 +57,6 @@ function SlideShow() {
                 <SwiperSlide><img alt={'school'}src={`${process.env.PUBLIC_URL}/img/gallery/BG_CS_Abydos_02.png`} /></SwiperSlide>
                 <SwiperSlide><img alt={'school'}src={`${process.env.PUBLIC_URL}/img/gallery/BG_CS_Abydos_03.png`} /></SwiperSlide>
                 <SwiperSlide><img alt={'school'}src={`${process.env.PUBLIC_URL}/img/gallery/BG_CS_Abydos_04.png`} /></SwiperSlide>
-                <SwiperSlide><img alt={'school'}src={`${process.env.PUBLIC_URL}/img/gallery/BG_RamenYa.png`} /></SwiperSlide>
                 <SwiperSlide><img alt={'school'}src={`${process.env.PUBLIC_URL}/img/gallery/Title_BG.png`} /></SwiperSlide>
             </Swiper>
             <Swiper
@@ -93,7 +92,6 @@ function SlideShow() {
                 <SwiperSlide><img alt={'school'}src={`${process.env.PUBLIC_URL}/img/gallery/BG_CS_Abydos_02.png`} /></SwiperSlide>
                 <SwiperSlide><img alt={'school'}src={`${process.env.PUBLIC_URL}/img/gallery/BG_CS_Abydos_03.png`} /></SwiperSlide>
                 <SwiperSlide><img alt={'school'}src={`${process.env.PUBLIC_URL}/img/gallery/BG_CS_Abydos_04.png`} /></SwiperSlide>
-                <SwiperSlide><img alt={'school'}src={`${process.env.PUBLIC_URL}/img/gallery/BG_RamenYa.png`} /></SwiperSlide>
                 <SwiperSlide><img alt={'school'}src={`${process.env.PUBLIC_URL}/img/gallery/Title_BG.png`} /></SwiperSlide>
             </Swiper>
         </div>
