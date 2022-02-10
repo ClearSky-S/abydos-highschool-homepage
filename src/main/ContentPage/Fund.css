@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&display=swap');
+
+.fund-greeting h3{
+    color: rgb(0, 31, 133);
+    margin: 20px 0px;
+
+}
+
+.fund-greeting p{
+    margin-bottom: 50px;
+    line-height: calc(1ex / 0.32);
+    font-size: 25px;
+    font-family: 'Nanum Pen Script', cursive;
+    letter-spacing :0.5px;
+}
+
+.fund-greeting p img{
+    width: 300px;
+    border-radius: 20px;
+    float: right;
+    margin: 0px 0px 10px 20px;
+}
+
+.fund-send p{
+    line-height: calc(1ex / 0.32);
+
+}
+
+.fund-send p.first{
+    font-size:18px;
+    font-weight: 600;
+    color: rgb(0, 186, 219);
+
+}
+
+.fund-use ul{
+    list-style: none;
+}
+
+.fund-use ul li{
+    border-radius: 20px;
+    box-sizing: content-box;
+    border: 1px solid rgb(5, 187, 250);
+    height:80px;
+    overflow: hidden;
+    margin: 20px 0px;
+}
+
+.fund-use ul li div.first{
+    float: left;
+    border-radius: 20px;
+    line-height: 80px;
+    position: relative;
+    width: 200px;
+    height: 100%;
+    background-color: rgb(5, 187, 250);
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600;
+    color: white;
+
+}
+
+.fund-use ul li div.second{
+    display: table;
+    float: left;
+    width: 560px;
+    height:100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    overflow: hidden;
+
+    
+}
+.fund-use ul li div.second div{
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+.fund-state table{
+    border-collapse: collapse;
+    /* width: 100%; */
+    margin:20px 0px;
+}
+.fund-state thead tr{
+    border-top: 2px solid rgb(119, 164, 206);
+
+}
+.fund-state thead tr th{
+    padding: 10px 5px;
+}
+
+.fund-state tbody tr{
+    border-top: 1px solid rgb(209, 209, 209);
+    border-bottom: 1px solid rgb(209, 209, 209);
+    /* font-size: 16px; */
+}
+
+
+.fund-state tbody tr td{
+    padding: 5px 5px;
+
+}
+.fund-state tbody tr td:nth-child(1)
+{
+    text-align: center;
+}
+
+.fund-state tbody tr td:nth-child(2){
+    padding-left: 30px;
+}

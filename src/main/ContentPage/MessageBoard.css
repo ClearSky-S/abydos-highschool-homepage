@@ -75,3 +75,7 @@
     font-size:15px;
     border-radius: 10px;
 }
+
+.message-board .post tr:nth-child(4){
+    height:200px;
+}
