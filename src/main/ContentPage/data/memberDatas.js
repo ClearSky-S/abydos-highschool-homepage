@@ -1,3 +1,33 @@
+let teacherListData = [
+  {
+    "index": 1,
+    "name": "쾌청",
+    "age": 22,
+    "institute": "연방수사동아리 <S.C.H.A.L.E>",
+    "college": "밀레니엄 사이언스 칼리지",
+    "major": "소프트웨어 엔지니어링",
+    "email": "junhyuckjang3@gmail.com"
+  },
+  {
+    "index": 2,
+    "name": "후킨",
+    "age": "비공개",
+    "institute": "연방수사동아리 <S.C.H.A.L.E>",
+    "college": "트리니티 종합 학원",
+    "major": "국문학",
+    "email": "비공개"
+  },
+  {
+    "index": 3,
+    "name": "현현현",
+    "age": "비공개",
+    "institute": "비공개",
+    "college": "비공개",
+    "major": "비공개",
+    "email": "비공개"
+  }
+];
+
 let studentListData = [
     {
       "index": 1,
@@ -51,34 +81,6 @@ let studentListData = [
     }
   ];
 
-let teacherListData = [
-    {
-      "index": 1,
-      "name": "쾌청",
-      "age": 122,
-      "institute": "연방수사동아리 <S.C.H.A.L.E>",
-      "college": "밀레니엄 사이언스 칼리지",
-      "major": "소프트웨어 엔지니어링",
-      "이메일": "junhyuckjang3@gmail.com"
-    },
-    {
-      "index": 2,
-      "name": "후킨",
-      "age": "비공개",
-      "institute": "연방수사동아리 <S.C.H.A.L.E>",
-      "college": "트리니티 종합 학원",
-      "major": "국문학",
-      "이메일": "비공개"
-    },
-    {
-      "index": 3,
-      "name": "현현현",
-      "age": "비공개",
-      "institute": "비공개",
-      "college": "비공개",
-      "major": "비공개",
-      "이메일": "비공개"
-    }
-  ];
+
 
 export{studentListData, teacherListData};

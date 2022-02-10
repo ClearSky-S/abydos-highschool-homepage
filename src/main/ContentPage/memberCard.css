@@ -1,0 +1,29 @@
+.member-card-list > div{
+    overflow: hidden;
+    border-radius: 15px;
+    border-bottom: 2px solid rgb(221, 221, 221);
+    border-right: 2px solid rgb(221, 221, 221);
+    padding:30px;
+    background-color: rgb(240, 252, 255);
+    /* height: 200px; */
+    margin: 30px 50px;
+    /* width: 600px; */
+}
+
+.member-card-list > div img{
+    float:right;
+    margin-top: 20px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.member-card-list > div h3{
+    box-sizing: border-box;
+    font-size: 26px;
+    margin: 0px 0 20px; 
+    font-weight: 600;
+    color: rgb(78, 123, 190);
+}
+.member-card-list > div p{
+    margin: 5px;
+}
