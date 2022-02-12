@@ -2,7 +2,6 @@ import Home from './main/Home';
 import './Main.css';
 import Content from './main/Content';
 function Main({page1,page2,setPage1, setPage2,pages}){
-    console.log(page1);
     return(
         <div className="main">
             <div className="container">
