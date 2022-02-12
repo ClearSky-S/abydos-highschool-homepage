@@ -4,7 +4,7 @@ let teacherListData = [
     "name": "쾌청",
     "age": 22,
     "institute": "연방수사동아리 <S.C.H.A.L.E>",
-    "college": "밀레니엄 사이언스 칼리지",
+    "college": "밀레니엄 사이언스 칼리지 졸업",
     "major": "소프트웨어 엔지니어링",
     "email": "junhyuckjang3@gmail.com"
   },

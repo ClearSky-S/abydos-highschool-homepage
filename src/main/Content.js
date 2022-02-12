@@ -10,7 +10,7 @@ import { enrollTestData } from './ContentPage/data/enrollTestData';
 import { enrollPresentationData } from './ContentPage/data/enrollPresentationData';
 
 
-import {StudentList, TeacherList} from './ContentPage/intro';
+import { PrincipalGreeting, StudentList, TeacherList, EduTarget, EduCourse, Symbol, Committee} from './ContentPage/intro';
 import { FundGreeting, FundState, FundUse, FundSend } from './ContentPage/Fund';
 
 function SideNav({ page1, page2, setPage2, pages }) {
@@ -25,7 +25,8 @@ function SideNav({ page1, page2, setPage2, pages }) {
                         key={index}
                         className={element === pages[page1].subpages[page2] ? "active" : ""}
                         onClick={(e) => {
-                            setPage2(index); window.scrollTo(0, 0);
+                            setPage2(index);
+                            window.scrollTo(0, 0);
                         }}
                     ><div>{element}</div></li>
                 )}
@@ -49,10 +50,14 @@ function Content({ page1, page2, setPage2, pages }) {
                     <h3 className="title">
                         {pages[page1].subpages[page2]}
                     </h3>
-                    
+                    {page1 === "intro" && page2 === 0 ? <PrincipalGreeting /> : null}
+                    {page1 === "intro" && page2 === 1 ? <EduTarget /> : null}
+                    {page1 === "intro" && page2 === 2 ? <EduCourse /> : null}
+                    {page1 === "intro" && page2 === 3 ? <Symbol /> : null}
                     {page1 === "intro" && page2 === 4 ? <TeacherList /> : null}
                     {page1 === "intro" && page2 === 5 ? <StudentList /> : null}
-                    {/* {page1 === "intro" ? <Error404 /> : null} */}
+                    {page1 === "intro" && page2 === 6 ? <Committee /> : null}
+
 
                     {page1 === "enroll" && page2 === 0 ? <MessageBoard rawData={enrollData} /> : null}
                     {page1 === "enroll" && page2 === 1 ? <MessageBoard rawData={enrollTestData} /> : null}
@@ -62,7 +67,7 @@ function Content({ page1, page2, setPage2, pages }) {
                     {page1 === "notice" && page2 === 1 ? <MessageBoard rawData={newsletterData} /> : null}
                     {page1 === "notice" && page2 === 2 ? <MessageBoard rawData={awardData} /> : null}
                     {page1 === "notice" && page2 === 3 ? <Error404 /> : null}
-                    {page1 === "notice" && page2 === 4 ? <Error404 /> : null}
+                    {/* {page1 === "notice" && page2 === 4 ? <Error404 /> : null} */}
 
                     {page1 === "community" ? <Error404 /> : null}
 

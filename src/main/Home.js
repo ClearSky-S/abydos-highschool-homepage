@@ -88,7 +88,7 @@ function QuickLink({ page1, setPage1, page2, setPage2, pages }) {
                     onClick={()=>changePage("notice",0)}
                 >
                     <div className="image"><img src={`${process.env.PUBLIC_URL}/img/quickLink/calendar.png`} alt="calendar" /></div>
-                    <div className="text">학사일정</div>
+                    <div className="text">학사안내</div>
                 </div>
                 <div
                     className="item"

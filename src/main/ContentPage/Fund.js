@@ -41,7 +41,7 @@ export function FundState() {
                 <thead>
                     <tr>
                         <th>2021 회계연도 총 수입</th>
-                        <th>단위(억 원)</th>
+                        <th>단위(만 원)</th>
 
                     </tr>
                 </thead>
@@ -64,7 +64,7 @@ export function FundState() {
                 <thead>
                     <tr>
                         <th>2021 회계연도 총 지출</th>
-                        <th>단위(억 원)</th>
+                        <th>단위(만 원)</th>
 
                     </tr>
                 </thead>

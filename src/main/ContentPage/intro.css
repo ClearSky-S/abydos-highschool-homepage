@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&display=swap');
+
+.article-style-one h3{
+    color: rgb(0, 31, 133);
+    margin: 20px 0px;
+}
+.article-style-one h4{
+    color: rgb(0, 31, 133);
+    margin: 20px 0px 10px;
+    font-size: 20px;
+
+}
+.article-style-one p{
+    margin-bottom: 20px;
+    letter-spacing :0.5px;
+    line-height: 30px;
+}
+.article-style-one.hand-writing p{
+    margin-bottom: 20px;
+    line-height: calc(1ex / 0.32);
+    font-size: 25px;
+    font-family: 'Nanum Pen Script', cursive;
+    letter-spacing :0.5px;
+}
+
+.article-style-one img{
+    width: 250px;
+    border-radius: 20px;
+    float: right;
+    margin: 0px 0px 10px 20px;
+}
+
+.article-style-one img.wide-image{
+    width: 300px;
+    border-radius: 20px;
+    float: right;
+    margin: 0px 0px 10px 20px;
+}
+.article-style-one img.inline{
+    display: block;
+    float: none;
+    width: 250px;
+    border-radius: 20px;
+    margin: 0px 0px 10px 0px;
+}
+
+.article-style-one ul{
+    margin-left: 30px;
+    list-style: lower-greek;
+}
+.article-style-one ul li{
+    margin-bottom: 8px;
+}
+
+.edu-target img{
+    float: left;
+    margin-right: 20px;
+    height: 340px;
+    border-radius: 20px;
+}
+.edu-target ul{
+    list-style: none;
+    width:100%
+}
+
+.edu-target ul li{
+    border-radius: 20px;
+    box-sizing: content-box;
+    border: 1px solid rgb(5, 187, 250);
+    height:50px;
+    overflow: hidden;
+    margin: 20px 0px;
+}
+
+.edu-target ul li div.first{
+    float: left;
+    border-radius: 15px;
+    line-height: 50px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(5, 187, 250);
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600;
+    color: white;
+
+}
+
+.edu-target ul li div.second{
+    display: table;
+    float: left;
+    /* width: 560px; */
+    height:100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    overflow: hidden;
+
+    
+}
+.edu-target ul li div.second div{
+    display: table-cell;
+    vertical-align: middle;
+
+}
