@@ -1,4 +1,11 @@
 import './Home.css';
+
+import { noticeBoardData } from './ContentPage/data/noticeBoardData';
+import { newsletterData } from './ContentPage/data/newsletterData';
+import { awardData } from './ContentPage/data/awardData';
+
+import { useState } from 'react';
+
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 
@@ -11,6 +18,16 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
 
+var getTextLength = function(str) {
+    var len = 0;
+    for (var i = 0; i < str.length; i++) {
+        if (escape(str.charAt(i)).length == 6) {
+            len++;
+        }
+        len++;
+    }
+    return len;
+}
 
 function SlideShow() {
     return (
@@ -124,9 +141,19 @@ function QuickLink({ page1, setPage1, page2, setPage2, pages }) {
     )
 }
 
-function Section1() {
+function Section1({title,rawData, onClick}) {
+    const [data] = useState([...rawData].reverse().slice(0,5));
     return (
-        <div className="section1">section1</div>
+        <div className="section1" onClick={onClick}>
+            <div className="plus-icon">+</div>
+            <h4>{title}</h4>
+            <ul>
+                {data.map((element, index)=>
+                <li key={index}>
+                    <span>{element.title} </span><span>{element.date}</span>
+                </li>)}
+            </ul>
+        </div>
     )
 }
 function Section2() {
@@ -149,13 +176,21 @@ function WorkingComponent() {
 }
 
 function Home({page1, page2, setPage1, setPage2, pages}) {
+    function changePage(p1, p2) {
+        setPage1(p1);
+        setPage2(p2);
+        window.scrollTo(0, 0);
+    }
     return (
         <div className="home">
             <div className="grid">
-                <SlideShow /> <QuickLink page1={page1} page2={page2} setPage1={setPage1} setPage2={setPage2} pages={pages}/>
+                <SlideShow/> <QuickLink page1={page1} page2={page2} setPage1={setPage1} setPage2={setPage2} pages={pages}/>
 
-                <WorkingComponent /> <WorkingComponent /> <WorkingComponent />
-                <WorkingComponent /> <WorkingComponent /> <WorkingComponent />
+                <Section1 title={"공지사항"} rawData={noticeBoardData} onClick={()=>changePage("notice",0)}/>
+                <Section1 title={"가정통신문"} rawData={newsletterData} onClick={()=>changePage("notice",1)}/>
+                <Section1 title={"수상소식"} rawData={awardData} onClick={()=>changePage("notice",2)}/>
+
+
 
             </div>
         </div>

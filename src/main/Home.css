@@ -6,7 +6,7 @@
 .home .grid{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 517.38px 230px 230px;
+    grid-template-rows: 517.38px 230px;
     gap: 30px;
 }
 
@@ -86,4 +86,55 @@
     margin-left: 60px;
     width: 60%;
     margin-bottom: 15px;
+}
+
+.home .section1{
+    position: relative;
+    cursor: pointer;
+    padding:15px;
+}
+.home .section1 h4{
+    padding-bottom: 5px;
+    /* border-bottom: 1px solid rgb(168, 168, 168); */
+    margin-bottom:20px;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(78, 123, 190);
+}
+.home .section1 ul{
+    list-style: none;
+    font-size: 14px;
+}   
+.home .section1 li{
+    margin:10px;
+}
+.home .section1 li span:first-child{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 73%;
+    padding-right:10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.home .section1 li span:last-child{
+    display: inline-block;
+    /* box-sizing: border-box; */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 27%;
+    /* font-size: 13px; */
+    color: rgb(20, 135, 155);
+
+}
+
+.home .section1 .plus-icon{
+    position: absolute;
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(78, 123, 190);
+    top: 5px;
+    right: 25px;
 }
