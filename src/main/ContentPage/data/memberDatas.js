@@ -13,19 +13,19 @@ let teacherListData = [
     "name": "후킨",
     "age": "비공개",
     "institute": "연방수사동아리 <S.C.H.A.L.E>",
-    "college": "트리니티 종합 학원",
-    "major": "국문학",
+    "college": "트리니티 종합 대학원 졸업",
+    "major": "캐릭터 디자인",
     "email": "비공개"
   },
-  {
-    "index": 3,
-    "name": "현현현",
-    "age": "비공개",
-    "institute": "비공개",
-    "college": "비공개",
-    "major": "비공개",
-    "email": "비공개"
-  }
+  // {
+  //   "index": 3,
+  //   "name": "현현현",
+  //   "age": "비공개",
+  //   "institute": "비공개",
+  //   "college": "비공개",
+  //   "major": "비공개",
+  //   "email": "비공개"
+  // }
 ];
 
 let studentListData = [

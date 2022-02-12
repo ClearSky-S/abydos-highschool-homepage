@@ -3,11 +3,13 @@ import Error404 from './Error404';
 import MessageBoard from './ContentPage/MessageBoard';
 import Gallery from './ContentPage/Gallery';
 import { noticeBoardData } from './ContentPage/data/noticeBoardData';
+
 import { newsletterData } from './ContentPage/data/newsletterData';
 import { awardData } from './ContentPage/data/awardData';
 import { enrollData } from './ContentPage/data/enrollData';
 import { enrollTestData } from './ContentPage/data/enrollTestData';
 import { enrollPresentationData } from './ContentPage/data/enrollPresentationData';
+import { councilBoardData } from './ContentPage/data/communityData';
 
 
 import { PrincipalGreeting, StudentList, TeacherList, EduTarget, EduCourse, Symbol, Committee} from './ContentPage/intro';
@@ -69,7 +71,8 @@ function Content({ page1, page2, setPage2, pages }) {
                     {page1 === "notice" && page2 === 3 ? <Error404 /> : null}
                     {/* {page1 === "notice" && page2 === 4 ? <Error404 /> : null} */}
 
-                    {page1 === "community" ? <Error404 /> : null}
+                    {page1 === "community" && page2 === 0 ? <MessageBoard rawData={councilBoardData} /> : null}
+                    {page1 === "community" && page2 !== 0? <Error404 /> : null}
 
                     {page1 === "gallery" ? <Gallery /> : null}
 

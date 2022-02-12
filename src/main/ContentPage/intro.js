@@ -120,8 +120,8 @@ function TeacherList() {
             {teacherListData.map((element, index) =>
                 <div key={index}>
                     {index === 0 ? <img src={`${process.env.PUBLIC_URL}/img/profile/clearskyProfile.png`} alt="clearSkyProfile.png" /> : null}
-                    {index === 1 ? <img src={`${process.env.PUBLIC_URL}/img/profile/blankProfile.png`} alt="blankProfile" /> : null}
-                    {index === 2 ? <img src={`${process.env.PUBLIC_URL}/img/profile/blankProfile.png`} alt="blankProfile" /> : null}
+                    {index === 1 ? <img src={`${process.env.PUBLIC_URL}/img/profile/hukinProfile.png`} alt="blankProfile" /> : null}
+                    {/* {index === 2 ? <img src={`${process.env.PUBLIC_URL}/img/profile/blankProfile.png`} alt="blankProfile" /> : null} */}
 
                     <h3>{element.name}</h3>
                     <p>나이: {element.age}</p>
