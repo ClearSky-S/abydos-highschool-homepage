@@ -35,7 +35,7 @@ let studentListData = [
       "grade": "3학년",
       "birth": "1월 2일",
       "height": "145cm",
-      "gun": "Eye of Horus (AR)",
+      "gun": "Eye of Horus (SG)",
       "type": "Striker",
       "specialty": "대테러전 (CT)"
     },
